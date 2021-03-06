@@ -2,24 +2,20 @@
 
 int main()
 {
-
 	int total = 0;
-	int t[] = { 0, 1, 2 };
+	int x = 0, y = 1, z = 2;
+
 	int i = 0;
+	while (z < 4000000){
+		x = z;
+		z = y + z;
+		y = x;
 
-	while (t[2] < 4000000)
-	{
-		t[0] = t[2];
-		t[2] = t[1] + t[2];
-		t[1] = t[0];
+		if ((y % 2) == 0)
+			total = total + y;
+
 		++i;
-
-		if ((t[1] % 2) == 0)
-		{
-			total = total + t[1];
-		}
 	}
 
 	printf("%d\n", total);
-
 }
