@@ -15,13 +15,14 @@ int main()
 
 		for (y = 1000; y > 910; --y){
 
-			find = x * y;
 			int rev = 0, remainder = 0;
+
+			find = x * y;
 			ifind = find;
 
 			while (ifind != 0){
 				remainder = ifind % 10;
-				rev = rev *10 + remainder;
+				rev = rev * 10 + remainder;
 				ifind /= 10;
 			}
 

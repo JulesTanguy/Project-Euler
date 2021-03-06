@@ -12,7 +12,7 @@ int main()
 	
 
 	for (int i = 1; i<= NOMBRE; i++) 
-		x = x + i;
+		x += i;
 
 	x = x * x;
 

@@ -8,11 +8,11 @@ int main()
 	int i = 0;
 	while (z < 4000000){
 		x = z;
-		z = y + z;
+		z += y;
 		y = x;
 
 		if ((y % 2) == 0)
-			total = total + y;
+			total += y;
 
 		++i;
 	}
